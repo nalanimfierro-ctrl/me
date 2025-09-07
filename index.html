@@ -60,20 +60,10 @@
             <h2>Fun Fact</h2>
             <p>A fun fact is I bought a dog my freshman year at Lewis and flew him back to my home in colorado. This was also right after I turned 18 so my first adult decision/purchase was a puppy</p>
         </section>
-<!-- HTML Placeholder -->
-		<p id="last updated"></p>
-
-		<!-- JavaScript -->
-		<script>
-			fetch('https://api.github.com/repos/nalanimfierro-ctrl/me/commits/main')
-			.then(res => res.json())
-			.then(data => {
-				const lastUpdated = new Date(data.commit.committer.date);
-				document.getElementById('last-updated').textContent = 
-					"Last updated:" + lastUpdated.toDateString();
-			});
-		</script>
-	
+		<section class="Last Updated on dd/mm/yyyy">
+			<h2>Last Updated</h2>
+			<p>09/07/2025</p>
+		</section>
     </div>
 </body>
 </html>
